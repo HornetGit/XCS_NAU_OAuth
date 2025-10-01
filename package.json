@@ -1,0 +1,36 @@
+{
+  "name": "nuxt-ui-template-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "migrations:generate" : "drizzle-kit generate",
+    "migrations:migrate" : "drizzle-kit migrate"
+
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/simple-icons": "^1.2.53",
+    "@libsql/client": "^0.15.15",
+    "@nuxt/ui": "^4.0.0",
+    "drizzle-orm": "^0.44.5",
+    "nuxt": "^4.1.2",
+    "nuxt-auth-utils": "0.5.25"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.9.0",
+    "drizzle-kit": "^0.31.5",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.1.0"
+  },
+  "resolutions": {
+    "unimport": "4.1.1"
+  },
+  "packageManager": "pnpm@10.17.1"
+}
