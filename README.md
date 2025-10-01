@@ -7,8 +7,8 @@ This is the code testing corresponding to the ['NAU in 1 hour' YouTube tutorial]
 NAU: Nuxt OAuth Utils module, published as a [nuxt module](https://nuxt.com/modules/auth-utils)
 
 ## More ref:
-[nuxt-auth-utils by Eckhardt (Kaizen) Dreyer](https://github.com/Eckhardt-D/nuxt-auth-utils.git)
-[Demo by Atinux](https://github.com/atinux/nuxt-auth-utils)
+- [nuxt-auth-utils by Eckhardt (Kaizen) Dreyer](https://github.com/Eckhardt-D/nuxt-auth-utils.git)
+- [Demo by Atinux](https://github.com/atinux/nuxt-auth-utils)
 
 
 ## Stack
