@@ -1,11 +1,15 @@
-# XCS_OAuth - Nuxt Authentication Module for testing
+# OAuth - Nuxt Authentication Module for testing
 
-Purpose: Testing the authentication module using Nuxt UI + nuxt-auth-utils with GitHub OAuth and local authentication. This code works for GitHub as a third-party provider.
+Purpose: Testing the authentication module using Nuxt UI + nuxt-auth-utils module for GitHub OAuth (or more) and local authentication.
 
 This is the code testing corresponding to the ['NAU in 1 hour' YouTube tutorial](https://youtu.be/mNDHRLqmoMg?si=Fx-CYUcR-1M35Ij9) by his owner.
 
-
 NAU: Nuxt OAuth Utils module, published as a [nuxt module](https://nuxt.com/modules/auth-utils)
+
+## More ref:
+[nuxt-auth-utils by Eckhardt (Kaizen) Dreyer](https://github.com/Eckhardt-D/nuxt-auth-utils.git)
+[Demo by Atinux](https://github.com/atinux/nuxt-auth-utils)
+
 
 ## Stack
 
