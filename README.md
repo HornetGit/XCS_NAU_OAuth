@@ -1,6 +1,11 @@
-# XCS_OAuth - Nuxt Authentication Module
+# XCS_OAuth - Nuxt Authentication Module for testing
 
-Authentication module for V12 stack using Nuxt UI + nuxt-auth-utils with GitHub OAuth and local authentication.
+Purpose: Testing the authentication module using Nuxt UI + nuxt-auth-utils with GitHub OAuth and local authentication. This code works for GitHub as a third-party provider.
+
+This is the code testing corresponding to the ['NAU in 1 hour' YouTube tutorial](https://youtu.be/mNDHRLqmoMg?si=Fx-CYUcR-1M35Ij9) by his owner.
+
+
+NAU: Nuxt OAuth Utils module, published as a [nuxt module](https://nuxt.com/modules/auth-utils)
 
 ## Stack
 
@@ -48,14 +53,24 @@ pnpm migrations:migrate   # Run migrations
 
 ```
 app/
-├── pages/
-│   ├── auth/login.vue      # Login page
-│   ├── auth/register.vue   # Registration page
-│   └── index.vue           # Protected home page
+├── assets/css/
+│   └── main.css            # Global styles
 ├── components/
 │   ├── AppLogo.vue
 │   └── TemplateMenu.vue
-└── app.vue                 # Root component with nav
+├── layouts/
+│   ├── default.vue         # Default layout
+│   ├── form.vue            # Form layout (auth pages)
+│   └── landing.vue         # Landing page layout
+├── middleware/
+│   └── auth.ts             # Auth middleware for protected routes
+├── pages/
+│   ├── auth/
+│   │   ├── login.vue       # Login page
+│   │   └── register.vue    # Registration page
+│   └── index.vue           # Protected home page
+├── app.config.ts           # App configuration
+└── app.vue                 # Root component
 
 server/
 ├── api/auth/
@@ -63,13 +78,15 @@ server/
 │   └── register.post.ts    # Registration endpoint
 ├── database/
 │   └── schema.ts           # Drizzle schema definition
+├── routes/oauth/
+│   └── github.get.ts       # GitHub OAuth callback handler
 └── utils/
     └── database.ts         # DB connection utilities
 ```
 
 ## Usage
 
-1. Configure GitHub OAuth app and add credentials to `.env`
-2. Run `pnpm migrations:migrate` to initialize database
+1. Configure GitHub OAuth app and add credentials from `.env.example` to `.env`
+2. Run `pnpm migrations:generate` and `pnpm migrations:migrate` to initialize database
 3. Start dev server with `pnpm dev`
 4. Access login at `/auth/login` or protected page at `/`
